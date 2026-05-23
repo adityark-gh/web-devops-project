@@ -1,0 +1,32 @@
+<settings>
+ <servers>
+  <server>
+    <id>learn-devops-devops-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>learn-devops-devops-cicd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>learn-devops-devops-cicd</id>
+        <url>https://learn-devops-992685484210.d.codeartifact.us-east-1.amazonaws.com/maven/devops-cicd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>learn-devops-devops-cicd</id>
+    <name>learn-devops-devops-cicd</name>
+    <url>https://learn-devops-992685484210.d.codeartifact.us-east-1.amazonaws.com/maven/devops-cicd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
+
