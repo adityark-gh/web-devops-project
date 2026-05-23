@@ -3,10 +3,10 @@ package com.example;
 
 import junit.framework.TestCase;
 
-public class MessageServiceTest {
+public class MessageServiceTest extends TestCase {
 
-    @Test
-    void shouldReturnWelcomeMessage() {
+   
+    void testWelcomeMessage() {
         String result = MessageService.getWelcomeMessage();
 
         assertEquals(
