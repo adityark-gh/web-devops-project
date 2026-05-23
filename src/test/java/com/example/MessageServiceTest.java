@@ -6,7 +6,7 @@ import junit.framework.TestCase;
 public class MessageServiceTest extends TestCase {
 
    
-    void testWelcomeMessage() {
+    public void testWelcomeMessage() {
         String result = MessageService.getWelcomeMessage();
 
         assertEquals(
