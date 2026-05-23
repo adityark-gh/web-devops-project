@@ -1,4 +1,4 @@
-<%@ page import="com.example.MessageService" %>
+<%@ page import="MessageService" %>
 <html> 
     <body>
          <h2>Hello Adi!</h2> 
